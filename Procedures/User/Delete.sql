@@ -1,0 +1,17 @@
+USE [WorksSp]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[USP_WorksSp_User_Delete] (@UserId INT)
+AS
+BEGIN
+	DELETE FROM [dbo].[WorksSp_User]
+		WHERE UserId = @UserId
+	SET NOCOUNT ON;
+END
+GO

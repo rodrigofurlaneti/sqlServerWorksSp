@@ -1,0 +1,17 @@
+USE [WorksSp]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[USP_WorksSp_Size_Delete] (@SizeId INT)
+AS
+BEGIN
+	DELETE FROM [dbo].[WorksSp_Size]
+		WHERE SizeId = @SizeId
+	SET NOCOUNT ON;
+END
+GO

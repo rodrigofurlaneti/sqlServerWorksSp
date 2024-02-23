@@ -10,6 +10,8 @@ GO
 CREATE TABLE [dbo].[WorksSp_Product](
 	[ProductId] [int] IDENTITY(1,1) NOT NULL,
 	[ProductName] [varchar](150) NULL,
+	[CompanyId] [int] NULL,
+	[CompanyName] [varchar](50) NULL,
 	[SupplierId] [int] NULL,
 	[SupplierName] [varchar](50) NULL,
 	[UniformTypeId] [int] NULL,

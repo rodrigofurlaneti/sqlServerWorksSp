@@ -1,0 +1,17 @@
+USE [WorksSp]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[USP_WorksSp_Company_GetById] (@CompanyId INT)
+AS
+BEGIN
+	SELECT TOP 1 * FROM [dbo].[WorksSp_Company]
+		WHERE CompanyId = @CompanyId;
+	SET NOCOUNT ON;
+END
+GO
